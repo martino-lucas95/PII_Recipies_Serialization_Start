@@ -14,7 +14,7 @@ namespace LibraryTests
         public void SerializeEquipmentTest()
         {
             string description = "Test Equipment";
-            double hourlyCost = 9.99;
+            double hourlyCost = 999;
             string expected = $@"{{""Description"":""{description}"",""HourlyCost"":{hourlyCost}}}";
 
             IJsonConvertible equipment = new Equipment(description, hourlyCost);
@@ -27,7 +27,7 @@ namespace LibraryTests
         public void DeserializeEquipmentTest()
         {
             string description = "Test Equipment";
-            double hourlyCost = 9.99;
+            double hourlyCost = 999;
             string json = $@"{{""Description"":""{description}"",""HourlyCost"":{hourlyCost}}}";
 
             Equipment equipment = new Equipment(json);

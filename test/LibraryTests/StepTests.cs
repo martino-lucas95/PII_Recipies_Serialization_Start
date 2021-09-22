@@ -14,14 +14,14 @@ namespace LibraryTests
         public void SerializeStepTest()
         {
             string productDescription = "Test Product";
-            double unitCost = 9.99;
+            double unitCost = 999;
             string productJson = $@"{{""Description"":""{productDescription}"",""UnitCost"":{unitCost}}}";
 
             string equipmentDescription = "Test Equipment";
-            double hourlyCost = 99.99;
+            double hourlyCost = 9999;
             string equipmentJson = $@"{{""Description"":""{equipmentDescription}"",""HourlyCost"":{hourlyCost}}}";
 
-            double quantity = 999.99;
+            double quantity = 99999;
             int time = 10;
 
             string expected = $@"{{""Input"":{productJson},""Quantity"":{quantity},""Time"":{time},""Equipment"":{equipmentJson}}}";
@@ -38,14 +38,14 @@ namespace LibraryTests
         public void DeserializeStepTest()
         {
             string productDescription = "Test Product";
-            double unitCost = 9.99;
+            double unitCost = 999;
             string productJson = $@"{{""Description"":""{productDescription}"",""UnitCost"":{unitCost}}}";
 
             string equipmentDescription = "Test Equipment";
-            double hourlyCost = 99.99;
+            double hourlyCost = 9999;
             string equipmentJson = $@"{{""Description"":""{equipmentDescription}"",""HourlyCost"":{hourlyCost}}}";
 
-            double quantity = 999.99;
+            double quantity = 99999;
             int time = 10;
 
             string json = $@"{{""Input"":{productJson},""Quantity"":{quantity},""Time"":{time},""Equipment"":{equipmentJson}}}";

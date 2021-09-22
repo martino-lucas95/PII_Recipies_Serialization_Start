@@ -14,7 +14,7 @@ namespace LibraryTests
         public void SerializeProductTest()
         {
             string description = "Test Product";
-            double unitCost = 9.99;
+            double unitCost = 999;
             string expected = $@"{{""Description"":""{description}"",""UnitCost"":{unitCost}}}";
 
             IJsonConvertible Product = new Product(description, unitCost);
@@ -27,7 +27,7 @@ namespace LibraryTests
         public void DeserializeProductTest()
         {
             string description = "Test Product";
-            double unitCost = 9.99;
+            double unitCost = 999;
             string json = $@"{{""Description"":""{description}"",""UnitCost"":{unitCost}}}";
 
             Product Product = new Product(json);
